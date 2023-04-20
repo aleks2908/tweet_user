@@ -2,6 +2,7 @@
   "name": "tweet_user",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aleks2908.github.io/tweet_user/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
