@@ -4,7 +4,7 @@
   height: 460px;
   padding-top: 28px;
 
-  margin: 100px auto;
+  /* margin: 100px auto; */
   /* border: 1px solid black; */
 
   /* background-color: #5736a3; */
@@ -102,7 +102,7 @@
   background-position: center center; */
   /* background-attachment: fixed; */
 }
-.user {
+.userAvatar {
   /* position: absolute; */
   /* margin: 0 auto; */
   width: 62px;
@@ -166,13 +166,28 @@ top: 284px; */
   /* padding: 14px 28px; */
   /* gap: 6px; */
 
-  
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* Landing/button text color */
+
+  color: #373737;
 
   position: relative;
   width: 196px;
   height: 50px;
 
-  background: #ebd8ff;
+  background-color: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10.3108px;
+}
+
+.active{
+  background-color: #5CD3A8;
 }

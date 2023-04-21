@@ -3,14 +3,16 @@
 // import "./App.css";
 import "modern-normalize";
 
-import { Card } from "../components/Card/Card";
+// import { Card } from "../components/Card/Card";
+import { CardList } from "./CardList/CardList";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
       <main>
-        <Card />
+        <CardList />
+        {/* <Card /> */}
       </main>
     </div>
   );
