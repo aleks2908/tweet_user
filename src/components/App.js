@@ -1,21 +1,18 @@
-// import {Card} from "./Card/Card"
-// import logo from "./logo.svg";
-// import "./App.css";
 import "modern-normalize";
+import { Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+import Home from "../pages/Home/Home";
+import Tweets from "../pages/Tweets/Tweets";
 
-// import { Card } from "../components/Card/Card";
-import { CardList } from "./CardList/CardList";
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-      <main>
-        <CardList />
-        {/* <Card /> */}
-      </main>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tweets" element={<Tweets />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+      <Toaster position="top-right" reverseOrder={false} />
+    </>
   );
 }
-
-export default App;

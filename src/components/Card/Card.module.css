@@ -3,18 +3,7 @@
   width: 380px;
   height: 460px;
   padding-top: 28px;
-
-  /* margin: 100px auto; */
-  /* border: 1px solid black; */
-
-  /* background-color: #5736a3; */
-  /* background-image: url(./img/bg.webp);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed; */
-  /* color: black; */
   text-align: center;
-
   background: linear-gradient(
     114.99deg,
     #471ca9 -0.99%,
@@ -25,49 +14,17 @@
   border-radius: 20px;
 }
 
-/* .bgImageWrapper { */
-/* padding: 28px 36px 0 36px; */
-/* width: 308;
-  height: 168px; */
-/* } */
-
-.picture {
+.cardBackground {
   width: 308px;
   height: 168px;
-  /* padding-top: 28px; */
   margin: 0 auto;
   margin-bottom: 88px;
-  /* background-color: green; */
-  /* background-image: url(../images/picture2.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
-
-/* .picture {
-  width: 308;
-  height: 168px;
-  background-image: url(../images/picture2.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
-/* export const Background = styled.div`
-  width: 308;
-  height: 168px;
-  background-image: url(${bgImg});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-`; */
 
 .logo {
   position: absolute;
   top: 20px;
   left: 20px;
-  /* margin-top: 20px; */
-  /* margin-left: 20px; */
   width: 76px;
   height: 22px;
 }
@@ -75,15 +32,22 @@
 .userWrapper {
   position: absolute;
   top: 178px;
-  /* bottom: 202; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80px;
   width: 100%;
-  /* background-color: blue; */
-  /* top: 178px; */
   margin: 0 auto;
+}
+
+.line {
+  width: 380px;
+  height: 8px;
+  left: 0px;
+  top: 214px;
+  background: #ebd8ff;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+    inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
 }
 
 .userBlock {
@@ -95,99 +59,59 @@
   height: 80px;
   border-radius: 50%;
   overflow: hidden;
-  /* background-color: red; */
   background-color: #5736a3;
-  /* background-image: url(../images/user.png);
-  background-repeat: no-repeat;
-  background-position: center center; */
-  /* background-attachment: fixed; */
-}
-.userAvatar {
-  /* position: absolute; */
-  /* margin: 0 auto; */
-  width: 62px;
-  height: 62px;
-
-  /* background: red; */
-  /* box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
-    inset 0px -2.19582px 4.39163px #ae7be3,
-    inset 0px 4.39163px 3.29372px #fbf8ff;
-  border-radius: 13.1749px; */
 }
 
-.ellipse {
+.userBlockBorder {
   position: absolute;
-  /* width: 80px;
-  height: 80px; */
-  /* left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  padding: 5px; */
-}
-
-.line {
-  /* position: absolute; */
-  width: 380px;
-  height: 8px;
-  left: 0px;
-  top: 214px;
-
-  background: #ebd8ff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
     inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
 }
 
-.counter {
-  /* position: absolute; */
-  /* width: 132px;
-height: 24px; */
-  /* left: 124px;
-top: 284px; */
+.userAvatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  z-index: 100;
+}
 
-  font-family: "Montserrat";
-  font-style: normal;
+.counter {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-
   color: #ebd8ff;
-
   margin-bottom: 16px;
 }
 
 .button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  margin: 26px auto;
-  /* padding: 14px 28px; */
-  /* gap: 6px; */
-
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
-
-  text-transform: uppercase;
-
-  /* Landing/button text color */
-
-  color: #373737;
-
-  position: relative;
   width: 196px;
   height: 50px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 26px auto;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #373737;
   background-color: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10.3108px;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.active{
-  background-color: #5CD3A8;
+.button:hover {
+  color: #3413eb;
+}
+
+.active {
+  background-color: #5cd3a8;
 }

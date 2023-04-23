@@ -1,7 +1,16 @@
-body {
-  font-family: sans-serif;
-  line-height: 1.5;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+
+body {
+  font-family: "Montserrat";
+  line-height: 1.5;
+  background-color: #ebe4fa;
+}
+
 h1,
 h2,
 h3,
@@ -22,13 +31,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-.button {
+button {
   cursor: pointer;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
